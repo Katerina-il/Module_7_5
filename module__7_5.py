@@ -51,7 +51,7 @@ for root, dirs, files in os.walk(directory):
         filetime = os.path.getmtime(file)
         formatted_time = time.strftime("%d.%m.%Y %H:%M", time.localtime(filetime))
         filesize = os.path.getsize(file)
-    # path = 'C:\Users\ZakharovaEI5\PycharmProjects\Project 0,0\Module 7 open files\new in module 7'
+
         parent_dir = os.path.dirname(os.path.join(root, file))
         print(f'Обнаружен файл: {file}, Путь: {filepath}, Размер: {filesize} байт, '
           f'Время изменения: {formatted_time}, Родительская директория: {parent_dir}')
